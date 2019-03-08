@@ -115,6 +115,7 @@ public class VentanaPaint extends javax.swing.JFrame {
         jToggleButton4 = new javax.swing.JToggleButton();
         panelColores1 = new codigo.PanelColores();
         jToggleButton2 = new javax.swing.JToggleButton();
+        jToggleButton5 = new javax.swing.JToggleButton();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
 
@@ -179,13 +180,13 @@ public class VentanaPaint extends javax.swing.JFrame {
         });
         getContentPane().add(jToggleButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 78, 37, 38));
 
-        jToggleButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/pentagono.png"))); // NOI18N
+        jToggleButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/estrella.png"))); // NOI18N
         jToggleButton4.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mousePressed(java.awt.event.MouseEvent evt) {
                 jToggleButton4MousePressed(evt);
             }
         });
-        getContentPane().add(jToggleButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 160, 37, 36));
+        getContentPane().add(jToggleButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 210, 37, 36));
         getContentPane().add(panelColores1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 380, 80, 240));
 
         jToggleButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/cuadrado.png"))); // NOI18N
@@ -195,6 +196,14 @@ public class VentanaPaint extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jToggleButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 120, 37, 36));
+
+        jToggleButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/pentagono.png"))); // NOI18N
+        jToggleButton5.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                jToggleButton5MousePressed(evt);
+            }
+        });
+        getContentPane().add(jToggleButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 160, 37, 36));
 
         jMenu1.setText("File");
         jMenu1.addChangeListener(new javax.swing.event.ChangeListener() {
@@ -256,7 +265,7 @@ public class VentanaPaint extends javax.swing.JFrame {
 
     private void jToggleButton4MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jToggleButton4MousePressed
         //elige cuadrados
-        formaSeleccionada = 5;        
+        formaSeleccionada = 24;        
         deSelecciona();
     }//GEN-LAST:event_jToggleButton4MousePressed
 
@@ -272,6 +281,11 @@ public class VentanaPaint extends javax.swing.JFrame {
         formaSeleccionada = 4;
         deSelecciona();
     }//GEN-LAST:event_jToggleButton2MousePressed
+
+    private void jToggleButton5MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jToggleButton5MousePressed
+       formaSeleccionada = 5;        
+        deSelecciona();
+    }//GEN-LAST:event_jToggleButton5MousePressed
 
     /**
      * @param args the command line arguments
@@ -317,6 +331,7 @@ public class VentanaPaint extends javax.swing.JFrame {
     private javax.swing.JToggleButton jToggleButton1;
     private javax.swing.JToggleButton jToggleButton2;
     private javax.swing.JToggleButton jToggleButton4;
+    private javax.swing.JToggleButton jToggleButton5;
     private codigo.PanelColores panelColores1;
     // End of variables declaration//GEN-END:variables
 }
